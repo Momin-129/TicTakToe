@@ -1,0 +1,58 @@
+<DOCTYPE html>
+  <html lang="en">
+    <head>
+      <title></title>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+      <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+      />
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+      <link href="css/style.css" rel="stylesheet" />
+    </head>
+    <body>
+      <div class="container text-center mt-5" id="info"></div>
+      <div class="container text-center mt-3 img">
+        <img src="excited.gif" alt="" id="winImage" />
+        <br />
+      </div>
+      <div class="container text-center btnRestart">
+        <button
+          type="button"
+          class="btn btn-light"
+          onclick="window.location.reload()"
+        >
+          Restart Game
+        </button>
+      </div>
+      <div class="container box mt-5">
+        <span class="top"></span>
+        <span class="bottom"></span>
+        <span class="centerH"></span>
+        <span class="centerV"></span>
+        <span class="left"></span>
+        <span class="right"></span>
+        <span class="leftToright"></span>
+        <span class="rightToleft"></span>
+        <div class="row justify-content-center" id="r0">
+          <div class="col-md-4 bl bt" id="0"></div>
+          <div class="col-md-4 bt" id="1"></div>
+          <div class="col-md-4 bt br" id="2"></div>
+        </div>
+        <div class="row justify-content-center" id="r1">
+          <div class="col-md-4 bl" id="3"></div>
+          <div class="col-md-4" id="4"></div>
+          <div class="col-md-4 br" id="5"></div>
+        </div>
+        <div class="row justify-content-center" id="r2">
+          <div class="col-md-4 bb bl" id="6"></div>
+          <div class="col-md-4 bb" id="7"></div>
+          <div class="col-md-4 bb br" id="8"></div>
+        </div>
+      </div>
+    </body>
+    <script src="script/app.js" type="module"></script>
+  </html>
+</DOCTYPE>
